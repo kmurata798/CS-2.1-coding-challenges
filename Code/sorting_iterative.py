@@ -22,7 +22,7 @@ def bubble_sort(items):
 
     # loop through each index in the list
     # Repeat until all items are in sorted order
-    for i in range(len(items):
+    for i in range(len(items)):
         # loop through each index in the list while swapping adjacent  items
         for j in range(len(items) - 1):
             # check if current item is greater than the next item
@@ -36,7 +36,7 @@ def bubble_sort(items):
 def selection_sort(items):
     """Sort given items by finding minimum item, swapping it with first
     unsorted item, and repeating until all items are in sorted order.
-    O(n^2) because we are using a nested for loop to traverse through the list
+    Runtime usage: O(n^2) because we are using a nested for loop to traverse through the list
     Memory usage: O(1) because we aren't creating any additional data structures in the function"""
     # Repeat until all items are in sorted order
     for i in range(len(items) - 1):
@@ -55,9 +55,9 @@ def insertion_sort(items):
     order in front of items, and repeating until all items are in order.
     TODO: Running time: O(n^2) because we are using a while loop inside of a for loop
     TODO: Memory usage: O(1) because we aren't creating any additional data structures in the function"""
-    # TODO: Repeat until all items are in sorted order
-    # TODO: Take first unsorted item
-    # TODO: Insert it in sorted order in front of items
+    # Repeat until all items are in sorted order
+    # Take first unsorted item
+    # Insert it in sorted order in front of items
 
     # loop through the list starting at index 1, since we will use index 0 to swap items
     for index in range(1, len(array)):
@@ -67,9 +67,9 @@ def insertion_sort(items):
         currentIndex = index
 
         # Loop through the list starting from the current item
-        # The loop will continue until we reach the 0 index of the list,
-        # (Since we are comparing/iterating from left to right when swapping)
-        # And the loop must also check that the current item is less than the previous item
+        # The loop will continue until we reach the 0 index of the list
+        # (Since we are comparing/iterating from right to left within the sorted items when swapping)
+        # and the loop must also check that the current item is less than the previous item
         while currentIndex > 0 and array[currentIndex - 1] > currentValue:
             # We set the current item to now equal the previous, greater item since we have a variable 
             # to keep track of the current item -> currentValue
