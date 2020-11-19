@@ -117,7 +117,7 @@ def quick_sort(items, low=None, high=None):
     """Sort given items in place by partitioning items in range `[low...high]`
     around a pivot item and recursively sorting each remaining sublist range.
     TODO: Best case running time: O(n logn)=> simple partition or O(n)=> three-way partition and equal keys
-    TODO: Worst case running time: O(n)^2 when pivot is constantly the greatest or the smallest number
+    TODO: Worst case running time: O(n^2) when pivot is constantly the greatest or the smallest number
     TODO: Memory usage: O(1) """
     # TODO: Check if high and low range bounds have default values (not given)
     # Check if list or range is so small it's already sorted (base case)
