@@ -31,13 +31,13 @@ def counting_sort(numbers):
       counter += temp 
 
     # create output list by None 
-    output = [None] * numbers_length 
+    output = [None] * numbers_length
 
     # TODO: Loop over counts and append that many numbers into output list
     # place items directly into sorted position in result list based on info from position list 
     for value in numbers: 
-      result[position[value]] = value
-      position[value] += 1 
+      output[position[value]] = value
+    #   position[value] += 1 
 
     return output
 
