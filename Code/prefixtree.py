@@ -48,16 +48,6 @@ class PrefixTree:
             except:
                 return False
         return current_node.terminal
-        # curr_node = self.root
-        # for letter in string:
-        #     if curr_node.get_child(letter).character == letter:
-        #         curr_node = curr_node.get_child(letter)
-        #     else:
-        #         return False
-        # if curr_node.terminal:
-        #     return True
-        # else:
-        #     return False
 
     def insert(self, string):
         """Insert the given string into this prefix tree."""
@@ -150,7 +140,7 @@ class PrefixTree:
         if node.is_terminal():
           visit(prefix)
 
-        #if the node has children (can be terminal AND have childen) we need to 
+        #if the node has children (can be terminal AND have children) 
         #we need to loop children
         #call traverse on the children
         if len(node.children) > 0:
